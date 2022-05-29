@@ -1,0 +1,260 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+body{background-color: rgb(65, 236, 131); min-width:fit-content;}
+html{scroll-behavior:smooth;}
+article{min-width: 439px;}
+section{min-width: 439px;}
+
+/*---------Inicio Barra de navegacion----------------------------*/
+nav, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 175, 175);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 0 30px;
+    height: 50px;
+}
+header{
+    min-width: fit-content;
+}
+/*------Animacion a botones del nav------------------------------*/
+
+.BotonNav {    
+    transition-property: background;
+    transition-duration: .8s;
+    text-align: center;
+}
+
+.BotonNav:hover{
+    background-color: rgb(35, 48, 223);
+}
+
+/*-----------Termina barra de navegacion-------------------------*/
+
+/*--------------------1er bloque---------------------------------*/
+
+.presentacion-empresa{
+    /*border: 2px solid black;*/
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 433px;
+}
+.titulo-presentacion-empresa{
+    margin: 10px 15px;
+    /*border: 2px solid black;*/
+    font-size: 40px;    
+}
+.texto-presentacion-empresa{
+    /*border: 2px solid black;*/
+    margin-top: 20px;
+    font-size: 18px;
+}
+/*---------------------------------------------------------------*/
+
+/*----------------2do bloque-------------------------------------*/
+
+.presentacion-producto{
+    /*border: 2px solid rgb(203, 248, 4);*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    min-width: fit-content;
+    background-color: rgb(6, 233, 93);
+}
+
+.primer-titulo{
+    padding: 0 0 0 5px;
+    margin: 20px 0 20px 3px;
+    /*border: 2px solid black;*/
+}
+
+.segundo-titulo{
+    /*border: 2px solid black;*/
+    padding:  10px ;
+    text-align: center;
+    margin: 15px 0px 20px 0px;
+}
+
+.imagen-de-presentacion{
+    min-width: 300px;
+    max-height: 170px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.conteiner-presentacion{
+    /*border: 2px solid saddlebrown;*/
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.obj-y-funcionamiento{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;   
+    flex: 1 1 495px;
+}
+
+.funcionamiento{
+    margin-top: 10px;
+}
+/*---------------------------------------------------------------*/
+
+/*------------------imagenes-------------------------------------*/
+.container{
+    /*border: 2px solid #285AEB ;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.container > img {
+    margin: 10px;
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex: 1 1 350px;
+}
+
+
+
+/*------------------imagenes-------------------------------------*/
+
+/*----------------separacion1------------------------------------*/
+#primera-separación{
+    background: black;
+    margin: 20px auto;
+    height: .25px;
+    width: 50px;
+    border-color: black ;
+}
+/*---------------------------------------------------------------*/
+/*----------------Planos-----------------------------------------*/
+.planos{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    padding: 10px;
+    background-color: rgb(62, 129, 88);
+}
+.planos-caja{ 
+    margin: 30px 0px;
+    /*border: 2px solid green;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.planos-caja > img{
+    border-radius: 10px;
+    width: 350px;
+    margin: 5px 10px;
+    display: flex;
+    flex: 1 1 300px;
+}
+/*---------------------------------------------------------------*/
+
+/*-------------------Donde encontrarnos--------------------------*/
+
+.donde-encontrarnos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+iframe{
+    width: 70%;
+    height: 600px;
+    margin: 20px 0;   
+}
+
+/*---------------------------------------------------------------*/
+
+/*------------Formulario de contacto-----------------------------*/
+form{
+    background: linear-gradient(170deg, rgb(9, 95, 224), rgb(207, 73, 73));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: .5rem;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    border: black 2px solid;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+form > h2{
+    margin: 15px auto;
+}
+input{
+    margin-bottom: 1.8rem;
+    height: 2rem;
+    padding: 5px;
+}
+textarea{
+    margin-bottom: 2.5rem;
+    max-width: 18.5rem;
+    max-height: 7rem;
+    min-width: 18.5rem;
+    min-height: 7rem;
+    padding: 5px;
+}
+
+/*--------------Fin formulario-----------------------------------*/
+
+/*---------Footer-Redes sociales---------------------------------*/
+footer{
+    background-color: crimson;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer h1{
+    margin: 20px auto;
+    padding: 10px 0 0 0;
+}
+
+footer a{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    
+}
+
+.ig{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.fb{
+    background: #4267B2;
+}
+/*---------------------------------------------------------------*/
